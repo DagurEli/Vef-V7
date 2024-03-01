@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="Verkefni7.css">
+</head>
+<body>
+    <div id="popup-button" onclick="togglePopup()">?</div>
+
+    <div id="popup-form">
+        <div id="close-button" onclick="togglePopup()">X</div>
+        <form id="form-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function togglePopup() {
+            var popupForm = document.getElementById("popup-form");
+            popupForm.style.display = (popupForm.style.display === "none" || popupForm.style.display === "") ? "flex" : "none";
+        }
+    </script>
+
+
+    <nav>
+        <a href=https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD> Home</a>
+        <a href="https://en.wikipedia.org/wiki/Playboi_Carti">About</a>
+        <a href=https://twitter.com/playboicarti?lang=en>Contact</a>
+        <div class="dropdown" id="dropdown">
+            <span class="dropdown-icon" onclick="toggleDropdown()">&#8801;</span>
+            <div class="dropdown-content">
+        
+                <a href=https://www.instagram.com/playboicarti/?hl=en>Instagram</a>
+                <a href=https://www.facebook.com/PlayboiCarti/>Facebook</a>
+                <a href=https://www.youtube.com/@playboicarti>Youtube</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="box fade-in">Playboi Carti</h1>
+        <img src="drawing2.svg" alt="" class="minna">
+    </header>
+
+    <div class="col2">
+        <section>
+            <h2>Tónleikar Dagskrá</h2>
+            <p> <h5>Fimmtudagur 20. júní</h5>
+                
+                <ul>
+                <li>Kl. 18.00: Mæting hjá áhorfendum.</li>
+    
+                <li>Kl. 21.00: Carti Tónleikar í United Center, Chicago</li>
+                </ul>
+                
+                <h5>Föstudagur 21. júní</h5>
+                
+                <ul>
+                <li>Kl. 15.00–17.00: Carti framkoma í Pechanga Arena</li>
+                
+                <li>Kl. 15.30: Carti mætir á sviðið</li>
+                
+                <li>Kl. 17.30: Carti með lokalag
+                
+                <li>Kl. 18.30: Tónleikar halda áfram eins og áætlað með öðrum tónlistarmönnum</li>
+                
+                <li>Kl. 19.00–20.30: Létt pása með live tónlist spilandi</li>
+                
+                <li>Kl. 22.00: Drake með atriði</li>
+                
+                <li>Kl. 23.59: Lokaatriði tónleika</li>
+                </ul>
+                
+                <h5>Laugardagur 22. júní</h5>
+                <ul>
+                <li>Kl. 17.00: Rocket Mortgage Fieldhouse opnast fyrir tónleika</li>
+                
+                <li>Kl. 19.00: Boðið upp á veitingar.</li>
+                
+                <li>Kl. 21.00: Upphitun fyrir aðal framkomu</li>
+                
+                <li>Kl. 23.00: [HÉR ER AÐALVIÐBURÐUR HÁTÍÐARINNAR] </li>
+                </ul>
+
+                <h5>Sunnudagur 23. júní</h5>
+                <ul>
+                <li>Kl. 14.30–16.00: Coachella tónleikar</li>
+                
+                <li>Kl. 21.00: Carti & Travis Scott með framkomu</li>
+                </ul>
+            </p>
+            
+            </section>
+            
+        <section>
+            <form class="container">
+                <p><em>Skráning á tónleika</em></p>
+                <p>
+                    <label>Nafn:</label><br>
+                    <input type="text" name="first_name">
+                </p>
+                <p>
+                    <label>Email:</label><br>
+                    <input type="email" name="email" required="">
+                </p>
+                <p>
+                    <label>Símanúmer:</label><br>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Land:</label><br>
+                    <select>
+                        <option>Iceland</option>
+                        <option>United Kingdom</option>
+                        <option>United States</option>
+                        <option>Italy</option>
+                        <option>France</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Athugamsemd</label><br>
+                    <textarea></textarea>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" value="terms">
+                        I agree to the <a>terms and conditions</a>
+                    </label>
+                </p>
+                <p>
+
+                    <button type="reset" class="litur">Reset form</button>
+                    <button disabled="disabled" class="litur">Disabled</button>
+                </p>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+
+        <div>
+            <br>
+            <h4>Carti</h4>
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+          
+            <div class="slides">
+              <div class="slider" id="s1">
+                <img src="playboi-carti.jpg" alt="Slide 1" class="ssstaerd">
+              </div>
+              <div class="slider" id="s2">
+                <img src="cartired.webp" alt="Slide 2" class="ssstaerd">
+              </div>
+              <div class="slider" id="s3">
+                <img src="cartishow.webp" alt="Slide 3" class="ssstaerd">
+              </div>
+            </div>
+            <br>
+        </div>
+            <div class="sale-promotion">
+                <h2>Eini Sénsinn!</h2>
+                <p>Kaupið miða núna og fáið 20% afslátt!</p>
+                <button>Kaupa núna</button>
+                <br>
+                <h5>Allar upplýsingar um Playboi Carti er hægt að finna efst á síðunni</h5>
+            </div>
+            
+        <div>
+            <br>
+            <h4>Tónleikar</h4>
+            <img src="PlayboiCarti.jpg" alt="" class="ssstaerd">
+            <br>
+        </div>
+    </footer>
+</body>
+</html>
